@@ -1,4 +1,4 @@
-# Skiovox Helper -- the helper extension for the Skiovox exploit
+# Skiomox --- the moxxed skiovox helper
 
 **Installation**
 
