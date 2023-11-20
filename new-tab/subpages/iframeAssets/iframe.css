@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+#iframeID {
+    border: 15px solid rgb(29, 29, 29);
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 95vh;
+    width: 95vw;
+    transform: translate(-50%, -50%);
+    animation: example 1s ease-in-out 0s 1 forwards;
+}
+
+
+@keyframes example { 
+    from {
+        height: 0vh;
+        width: 0vw;
+    }
+    to {
+        height: 95vh;
+        width: 95vw;
+    }
+}

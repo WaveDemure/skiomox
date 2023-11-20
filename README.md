@@ -1,8 +1,6 @@
-# Skiomox --- the moxxed skiovox helper
+# Skiovox Helper -- the helper extension for the Skiovox exploit
 
-**Installation**
-
-While in skiovox instead of using the un-moxxed (un-modded) version use this one
+**Installation steps can be seen at the "stage 3" section on [skiovox.com](https://skiovox.com)**
 
 This extension:
 

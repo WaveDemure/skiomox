@@ -102,8 +102,10 @@
       border-radius: 10%;
       width: 500px;
       transition: 0.5s;
+  } 
+  .games a:hover {
+    background-color: rgb(25, 25, 25);
   }
-  
   .games a img {
       width: 15vh;
       border-radius: 20px;
@@ -116,6 +118,10 @@
     font-family: "Comfortaa", sans-serif;
     text-align: center;
     font-size: 3vh;
+  }
+
+  footer {
+    text-align: center;
   }
 
   /* alternate mode */

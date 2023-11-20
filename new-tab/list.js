@@ -1,33 +1,9 @@
+const iframeLink = "./subpages/iframe.html"
 const listOfItems = [
     {
-        "name": "exp",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
-    },
-    {
-        "name": "test",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
-    },
-    {
-        "name": "test2",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
-    },
-    {
-        "name": "tes5t",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
-    },
-    {
-        "name": "te123st",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
-    },
-    {
-        "name": "teasdst",
-        "link": "https://example.com",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTURkjADH8adMZoLwD6ozLVHAmnO98fkYr292CNkS3G&s"
+        "name": "Roblox (nowgg)",
+        "link": "https://now.gg/play/roblox-corporation/5349/roblox",
+        "image": "./assets/games/roblox.png"
     }
 ]
 var idx = 0;
@@ -42,7 +18,10 @@ window.onload = function() {
         var button = document.createElement("a")
         button.backgroundColor = document.body.style.backgroundColor;
         button.onclick = function () {
-            location.href = game.link;  
+            sessionStorage.setItem("link", game.link)
+            sessionStorage.setItem("title", game.name)
+
+            location.href = iframeLink;  
         };
         gamediv.appendChild(button);
 
