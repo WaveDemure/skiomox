@@ -2,7 +2,7 @@
 
 **Installation**
 
-While in skiovox instead of using the un-moxxed version use this one
+While in skiovox instead of using the un-moxxed (un-modded) version use this one
 
 This extension:
 
