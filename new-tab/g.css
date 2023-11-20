@@ -1,0 +1,129 @@
+* {
+    font-family: "Noto sans", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 8px;
+    background: #212121;
+    color: #ffffff;
+  }
+  
+  .top-left {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+  
+  .version {
+    font: bold 14px monospace;
+  }
+  
+  .top-right {
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .center {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  
+  .time {
+    font: 25px monospace;
+  }
+  
+  .battery {
+    font-size: 15px;
+  }
+  
+  .bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .bottom-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  svg {
+    color: white;
+    filter: brightness(0) invert(1);
+    margin: 1px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 250ms;
+  }
+  
+  svg:hover {
+    transform: scale(1.2);
+  }
+  
+  #move {
+    cursor: move;
+  }
+
+  .games {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 5fr);
+    grid-auto-rows: 35vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .games a {
+      border: 3px solid black;
+      padding: 15vh 2vw;
+      color: white;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 10%;
+      width: 500px;
+      transition: 0.5s;
+  }
+  
+  .games a img {
+      width: 15vh;
+      border-radius: 20px;
+      padding-top: 5px;
+  }
+  
+  .games-para {
+    font-weight: bolder;
+    color: white;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    font-size: 3vh;
+  }
+
+  /* alternate mode */
+  
+  body.black-text {
+    color: black;
+  }
+  
+  body.black-text svg {
+    filter: brightness(0);
+  }

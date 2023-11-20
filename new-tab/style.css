@@ -1,0 +1,94 @@
+* {
+  font-family: "Noto sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 8px;
+  background: #212121;
+  color: #ffffff;
+}
+
+.top-left {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.version {
+  font: bold 14px monospace;
+}
+
+.top-right {
+  position: fixed;
+  top: 10px;
+  right: 0px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.time {
+  font: 55px monospace;
+}
+
+.battery {
+  font-size: 15px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+svg {
+  color: white;
+  filter: brightness(0) invert(1);
+  margin: 1px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+svg:hover {
+  transform: scale(1.2);
+}
+
+#move {
+  cursor: move;
+}
+
+/* alternate mode */
+
+body.black-text {
+  color: black;
+}
+
+body.black-text svg {
+  filter: brightness(0);
+}
